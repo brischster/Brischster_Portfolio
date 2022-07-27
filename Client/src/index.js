@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import Footer from "./routes/Footer";
+import NavBar from "./routes/NavBar";
 import "./index.css";
 import "typeface-bellefair";
 import App from "./App";
@@ -14,7 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="footer" element={<Footer />} />
-          <Route path="navabar" element={<NavBar />} />
+          <Route path="navbar" element={<NavBar />} />
         </Route>
       </Routes>
     </BrowserRouter>

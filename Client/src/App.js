@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import Home from "./pages/Home";
 import {
   ThemeProvider,
   createTheme,
@@ -19,11 +20,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <h1>Links</h1>
-        <nav style={{ borderBottom: "solid 1px", paddingBottom: "1rem" }}>
-          <Link to="/footer">footer</Link>
-          <Link to="/navbar">navbar</Link>
-        </nav>
+        <Home />
       </ThemeProvider>
       <Outlet />
     </>
