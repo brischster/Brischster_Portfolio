@@ -7,6 +7,8 @@ import {
 } from "@mui/material/styles";
 import "./App.css";
 import { Typography } from "@mui/material";
+import NavBar from "./routes/NavBar";
+import Footer from "./routes/Footer";
 
 let theme = createTheme({
   typography: {
@@ -19,9 +21,11 @@ theme = responsiveFontSizes(theme);
 function App() {
   return (
     <>
+      <NavBar />
       <ThemeProvider theme={theme}>
         <Home />
       </ThemeProvider>
+      <Footer />
       <Outlet />
     </>
   );
