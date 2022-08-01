@@ -13,7 +13,11 @@ import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
 import { maxHeight } from "@mui/system";
 import Link from "@mui/material/Link";
 
-const preventDefault = (event) => event.preventDefault();
+// const theme = createTheme({
+//   palette: {
+//     primary: --bitorange,
+//   },
+// });
 
 const ProjectList = () => {
   return (
@@ -36,7 +40,7 @@ const ProjectList = () => {
                 the card API, placing the bets and user logic.
               </Typography>
             </CardContent>
-            <CardActions onClick={preventDefault}>
+            <CardActions>
               <Link href="espn.com" underline="hover">
                 <Button size="small">{"Play a Hand"}</Button>
               </Link>
@@ -63,15 +67,18 @@ const ProjectList = () => {
             </CardContent>
             <CardActions>
               <Button
+                style={{ backgroundColor: "#f2a900" }}
                 size="small"
                 variant="contained"
                 target="_blank"
                 rel="noreferrer"
+                color="primary"
                 href="https://the-melted-cone.herokuapp.com/"
               >
                 Shop for Ice Cream
               </Button>
               <Button
+                style={{ backgroundColor: "#f2a900" }}
                 size="small"
                 variant="contained"
                 target="_blank"
