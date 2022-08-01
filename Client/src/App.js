@@ -12,6 +12,7 @@ import Footer from "./routes/Footer";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
+import ProjectList from "./components/ProjectList";
 
 let theme = createTheme({
   typography: {
@@ -30,7 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="projectList" element={<ProjectList />} />
             <Route path="/resume" element={<Resume />} />
             <Route
               path="*"

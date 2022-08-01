@@ -122,7 +122,7 @@ const Home = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    <NavLink to="/projects">Recent Projects</NavLink>
+                    <NavLink to="/projectList">Recent Projects</NavLink>
                   </Typography>
                 </CardContent>
               </CardActionArea>
