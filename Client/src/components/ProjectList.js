@@ -15,8 +15,6 @@ import Link from "@mui/material/Link";
 
 const styles = {
   card: {
-    // minWidth: "18rem",
-    // minHeight: "20rem",
     width: "320px",
     height: "415px",
     margin: "3px",
@@ -166,6 +164,10 @@ const ProjectList = () => {
               <Typography variant="body2" color="text.secondary">
                 Fun quiz game to work on jQuery, local storage, event listeners
                 and JavaScript logic
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
               </Typography>
             </CardContent>
             <CardActions>
@@ -175,7 +177,7 @@ const ProjectList = () => {
                 rel="noreferrer"
                 href="https://the-melted-cone.herokuapp.com/"
               >
-                Take the Bitcoin Quiz
+                See If You Are a Bitcoin Psycho
               </Button>
               <Button
                 style={styles.button}
