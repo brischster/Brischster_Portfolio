@@ -13,20 +13,35 @@ import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
 import { maxHeight } from "@mui/system";
 import Link from "@mui/material/Link";
 
-// const theme = createTheme({
-//   palette: {
-//     primary: --bitorange,
-//   },
-// });
+const styles = {
+  card: {
+    // minWidth: "18rem",
+    // minHeight: "20rem",
+    width: "320px",
+    height: "415px",
+    margin: "3px",
+  },
+  button: {
+    backgroundColor: "#f2a900",
+    size: "small",
+    variant: "contained",
+  },
+  cardMedia: {
+    height: "auto",
+    maxHeight: "250px",
+    width: "auto",
+    maxWidth: "250px",
+  },
+};
 
 const ProjectList = () => {
   return (
     <>
-      <Grid container spacing={1} paddingLeft={40} paddingRight={40}>
+      <Grid container spacing={2} paddingLeft={37} paddingRight={37}>
         <Grid item xs={12} sm={6}>
-          <Card sx={{ maxWidth: 425, maxHeight: 425, margin: "3px" }}>
+          <Card style={styles.card}>
             <CardMedia
-              height="140"
+              style={styles.cardMedia}
               component="img"
               alt="back of card"
               image={blackjack}
@@ -42,18 +57,32 @@ const ProjectList = () => {
             </CardContent>
             <CardActions>
               <Link href="espn.com" underline="hover">
-                <Button size="small">{"Play a Hand"}</Button>
+                <Button
+                  style={styles.button}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://the-melted-cone.herokuapp.com/"
+                >
+                  {"Play a Hand of Cards"}
+                </Button>
               </Link>
-              <Button size="small">GitHub Repo</Button>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://the-melted-cone.herokuapp.com/"
+              >
+                GitHub Repo
+              </Button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card sx={{ maxWidth: 425, maxHeight: 425, margin: "3px" }}>
+          <Card style={styles.card}>
             <CardMedia
               component="img"
               alt="melted cone"
-              height="140"
+              style={styles.cardMedia}
               image={melted}
             />
             <CardContent>
@@ -67,20 +96,15 @@ const ProjectList = () => {
             </CardContent>
             <CardActions>
               <Button
-                style={{ backgroundColor: "#f2a900" }}
-                size="small"
-                variant="contained"
+                style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                color="primary"
                 href="https://the-melted-cone.herokuapp.com/"
               >
                 Shop for Ice Cream
               </Button>
               <Button
-                style={{ backgroundColor: "#f2a900" }}
-                size="small"
-                variant="contained"
+                style={styles.button}
                 target="_blank"
                 rel="noreferrer"
                 href="https://github.com/brischster/theMeltedCone"
@@ -91,11 +115,11 @@ const ProjectList = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card sx={{ maxWidth: 425, maxHeight: 425, margin: "3px" }}>
+          <Card style={styles.card}>
             <CardMedia
               component="img"
               alt="screen shot"
-              height="140"
+              style={styles.cardMedia}
               image={crypt}
             />
             <CardContent>
@@ -108,17 +132,31 @@ const ProjectList = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn About Cryptocurrency</Button>
-              <Button size="small">GitHub Repo</Button>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://the-melted-cone.herokuapp.com/"
+              >
+                Learn About Cryptocurrency
+              </Button>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://the-melted-cone.herokuapp.com/"
+              >
+                GitHub Repo
+              </Button>
             </CardActions>
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card sx={{ maxWidth: 425, maxHeight: 425, margin: "3px" }}>
+          <Card style={styles.card}>
             <CardMedia
               component="img"
               alt="bitcoin"
-              height="140"
+              style={styles.cardMedia}
               image={bitcoin}
             />
             <CardContent>
@@ -131,8 +169,22 @@ const ProjectList = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Take the Bitcoin Quiz</Button>
-              <Button size="small">GitHub Repo</Button>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://the-melted-cone.herokuapp.com/"
+              >
+                Take the Bitcoin Quiz
+              </Button>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://the-melted-cone.herokuapp.com/"
+              >
+                GitHub Repo
+              </Button>
             </CardActions>
           </Card>
         </Grid>

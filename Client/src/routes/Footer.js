@@ -17,7 +17,7 @@ const styles = {
     justifyContent: "space-around",
     alignItems: "center",
     typography: "body1",
-    position: "fixed",
+    position: "relative",
     bottom: 0,
     left: 0,
     right: 0,
