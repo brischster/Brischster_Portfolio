@@ -1,11 +1,6 @@
 import * as React from "react";
 
 import Typography from "@mui/material/Typography";
-// import {
-//   ThemeProvider,
-//   createTheme,
-//   responsiveFontSizes,
-// } from "@mui/material/styles";
 import Card from "@mui/material/Card";
 import selfie from "../Assets/Images/selfie.jpg";
 import Grid from "@mui/material/Grid";
@@ -13,15 +8,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 import { NavLink, Outlet } from "react-router-dom";
-// import About from
-// import Projects from "./pages/Projects";
-// import Resume from "./pages/Resume";
-
-// let theme = createTheme({
-//   typography: {
-//     fontFamily: ["Bellefair", "serif"].join(","),
-//   },
-// });
+import Carousel from "react-material-ui-carousel";
+import blackjack from "../Assets/Images/blackjack.png";
+import meltedcone from "../Assets/Images/meltedcone.png";
+import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
+import crypt from "../Assets/Images/crypt.png";
 
 const styles = {
   header: {
@@ -34,11 +25,6 @@ const styles = {
     //   alignItems: "center",
     borderBottom: "2px solid var(--bitorange)",
   },
-  //   card: {
-  //     maxWidth: "300",
-  //     direction: "column",
-  //     alignItems: "center",
-  //   },
 
   navbarLinks: {
     listStyle: "none",
@@ -71,8 +57,31 @@ const styles = {
     color: "var(--bitorange)",
   },
 };
+function rotatingImages(props) {
+  const images = [
+    {
+      image: { blackjack },
+    },
+    {
+      image: { meltedcone },
+    },
+    {
+      image: { bitcoin },
+    },
+    {
+      image: { crypt },
+    },
+  ];
+  return (
+    <Carousel>
+      {images.map((image, i) => (
+        <Item key={i} item={item} />
+      ))}
+    </Carousel>
+  );
+}
 
-const Home = () => {
+const Home = (props) => {
   return (
     <body>
       <div>
@@ -114,12 +123,7 @@ const Home = () => {
           <Grid item xs={12} sx={{ pb: 1 }}>
             <Card>
               <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image={selfie}
-                  alt="green iguana"
-                />
+                <img>{props.home.image}</img>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     <NavLink to="/projectList">Recent Projects</NavLink>
