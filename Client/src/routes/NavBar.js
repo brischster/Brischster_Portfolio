@@ -18,27 +18,19 @@ const settings = ["About Me", "Work", "Resume", "Contact Me"];
 
 const styles = {
   header: {
-    width: "100%",
     backgroundColor: "var(--bitgrey)",
-    paddingLeft: "30px",
-    paddingRight: "10px",
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
     borderBottom: "2px solid var(--bitorange)",
     display: "flex",
   },
-
   navbarLinks: {
     listStyle: "none",
     display: "flex",
   },
-
-  navItem: {
-    display: "inline-block",
-    padding: "10px 15px",
-    textDecoration: "none",
-    color: "rgb(255, 255, 255)",
+  title: {
+    color: "var(--bitorange)",
+    fontFamily: "Bellefair",
+    fontWeight: "bold",
   },
 };
 
@@ -64,8 +56,8 @@ const NavBar = () => {
   return (
     <>
       <AppBar position="static" style={styles.header}>
-        <Container maxWidth="xl" sx={{ mb: 2 }}>
-          <Toolbar disableGutters>
+        <Container maxWidth="xl">
+          <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
             <h1>
               Ryan{" "}
               <span id="bit-logo">
@@ -79,7 +71,7 @@ const NavBar = () => {
               component="a"
               href="/"
               sx={{
-                mr: 2,
+                mr: -45,
                 display: { xs: "none", md: "flex" },
                 fontFamily: "Bellefair",
                 fontWeight: 700,
@@ -88,10 +80,8 @@ const NavBar = () => {
                 textDecoration: "none",
               }}
             ></Typography>
-
-            <Box sx={{ flexGrow: 1 }}>
-              {/* <Grid container justifyContent="flex-end">
-                <Grid item> */}
+            <h1 style={styles.title}>Heal the World with Orange Pills</h1>
+            <Box>
               <Tooltip title="Click for Options" anchor="top-end">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="Ryan Brisch" src={selfie} />

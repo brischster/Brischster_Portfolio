@@ -59,7 +59,7 @@ const ProjectList = () => {
                   style={styles.button}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://the-melted-cone.herokuapp.com/"
+                  href="https://caseysmiller.github.io/bootcapBlackjack/"
                 >
                   {"Play a Hand of Cards"}
                 </Button>
@@ -68,7 +68,7 @@ const ProjectList = () => {
                 style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                href="https://the-melted-cone.herokuapp.com/"
+                href="https://github.com/brischster/BootcampBlackjack"
               >
                 GitHub Repo
               </Button>
@@ -125,8 +125,10 @@ const ProjectList = () => {
                 The Learning Crypt
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                For this project I built the backend to handle all routes
+                connecting the frontend to mySQL/our database. It was mostly
+                used for creating profiles and allowing users to login to the
+                app.
               </Typography>
             </CardContent>
             <CardActions>
@@ -134,7 +136,7 @@ const ProjectList = () => {
                 style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                href="https://the-melted-cone.herokuapp.com/"
+                href="https://thawing-mesa-35152.herokuapp.com"
               >
                 Learn About Cryptocurrency
               </Button>
@@ -142,7 +144,7 @@ const ProjectList = () => {
                 style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                href="https://the-melted-cone.herokuapp.com/"
+                href="https://github.com/brischster/Learning-Crypt-Dev"
               >
                 GitHub Repo
               </Button>
@@ -162,8 +164,9 @@ const ProjectList = () => {
                 Bitcoin Psycho Quiz
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Fun quiz game to work on jQuery, local storage, event listeners
-                and JavaScript logic
+                I built this simple quiz to enhance my skills in jQuery, local
+                storage, event listeners and JavaScript logic
+                <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
@@ -175,7 +178,7 @@ const ProjectList = () => {
                 style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                href="https://the-melted-cone.herokuapp.com/"
+                href="https://brischster.github.io/Bitcoin-Psycho-Quiz/"
               >
                 See If You Are a Bitcoin Psycho
               </Button>
@@ -183,7 +186,7 @@ const ProjectList = () => {
                 style={styles.button}
                 target="_blank"
                 rel="noreferrer"
-                href="https://the-melted-cone.herokuapp.com/"
+                href="https://github.com/brischster/Bitcoin-Psycho-Quiz"
               >
                 GitHub Repo
               </Button>
