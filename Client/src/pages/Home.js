@@ -8,11 +8,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
 import { NavLink, Outlet } from "react-router-dom";
-import Carousel from "react-material-ui-carousel";
+
 import blackjack from "../Assets/Images/blackjack.png";
 import meltedcone from "../Assets/Images/meltedcone.png";
 import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
 import crypt from "../Assets/Images/crypt.png";
+import Carousel from "better-react-carousel";
 
 const styles = {
   header: {
@@ -56,32 +57,14 @@ const styles = {
     padding: "10px 15px",
     color: "var(--bitorange)",
   },
+  media: {
+    // height: 100,
+    // width: 100,
+    margin: "auto",
+  },
 };
-function rotatingImages(props) {
-  const images = [
-    {
-      image: { blackjack },
-    },
-    {
-      image: { meltedcone },
-    },
-    {
-      image: { bitcoin },
-    },
-    {
-      image: { crypt },
-    },
-  ];
-  return (
-    <Carousel>
-      {images.map((image, i) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
-  );
-}
 
-const Home = (props) => {
+const Home = () => {
   return (
     <body>
       <div>
@@ -93,7 +76,7 @@ const Home = (props) => {
                   component="img"
                   height="140"
                   image={selfie}
-                  alt="green iguana"
+                  alt="image of Ryan"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
@@ -123,7 +106,24 @@ const Home = (props) => {
           <Grid item xs={12} sx={{ pb: 1 }}>
             <Card>
               <CardActionArea>
-                <img>{props.home.image}</img>
+                <Carousel loop>
+                  <Carousel.Item>
+                    <img component="img" style={styles.media} src={blackjack} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img
+                      component="img"
+                      style={styles.media}
+                      src={meltedcone}
+                    />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img component="img" style={styles.media} src={bitcoin} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img component="img" style={styles.media} src={crypt} />
+                  </Carousel.Item>
+                </Carousel>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     <NavLink to="/projectList">Recent Projects</NavLink>
