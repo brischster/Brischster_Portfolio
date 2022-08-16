@@ -14,6 +14,7 @@ import meltedcone from "../Assets/Images/meltedcone.png";
 import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
 import crypt from "../Assets/Images/crypt.png";
 import Carousel from "better-react-carousel";
+import family from "../Assets/Images/family.jpg";
 
 const styles = {
   header: {
@@ -30,6 +31,10 @@ const styles = {
   navbarLinks: {
     listStyle: "none",
     display: "flex",
+  },
+  photos: {
+    hideArrow: true,
+    autoplay: "1000",
   },
 
   navItem: {
@@ -58,8 +63,8 @@ const styles = {
     color: "var(--bitorange)",
   },
   media: {
-    // height: 100,
-    // width: 100,
+    height: 100,
+    width: 100,
     margin: "auto",
   },
 };
@@ -75,8 +80,8 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="140"
-                  image={selfie}
-                  alt="image of Ryan"
+                  image={family}
+                  alt="image of Ryan's family"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
@@ -106,24 +111,30 @@ const Home = () => {
           <Grid item xs={12} sx={{ pb: 1 }}>
             <Card>
               <CardActionArea>
-                <Carousel loop>
-                  <Carousel.Item>
-                    <img component="img" style={styles.media} src={blackjack} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img
-                      component="img"
-                      style={styles.media}
-                      src={meltedcone}
-                    />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img component="img" style={styles.media} src={bitcoin} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img component="img" style={styles.media} src={crypt} />
-                  </Carousel.Item>
-                </Carousel>
+                <span style={styles.photos}>
+                  <Carousel hideArrow={true} autoplay={2000} loop>
+                    <Carousel.Item>
+                      <img
+                        component="img"
+                        style={styles.media}
+                        src={blackjack}
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        component="img"
+                        style={styles.media}
+                        src={meltedcone}
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img component="img" style={styles.media} src={bitcoin} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img component="img" style={styles.media} src={crypt} />
+                    </Carousel.Item>
+                  </Carousel>
+                </span>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     <NavLink to="/projectList">Recent Projects</NavLink>
