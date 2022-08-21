@@ -10,7 +10,6 @@ import Grid from "@mui/material/Grid";
 import melted from "../Assets/Images/meltedcone.png";
 import crypt from "../Assets/Images/crypt.png";
 import bitcoin from "../Assets/Images/bitcoinquiz.jpeg";
-import { maxHeight } from "@mui/system";
 import Link from "@mui/material/Link";
 
 const styles = {
