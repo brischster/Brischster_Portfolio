@@ -23,7 +23,7 @@ I used React once before on my portfolio but this is the first time I have built
 
 1. Clone Github repository and install necessary frameworks
 
-[Live Link to Portfolio](https://brischsterreactportfolio.herokuapp.com/resume)
+[Live Link to Portfolio](https://brischryanportfolio.herokuapp.com/home)
 
 ### <ins>How to Use/Screenshot </ins>
 

@@ -4,7 +4,7 @@ const App = () => {
   // Function will execute on click of button
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch("Ryan_Brisch_Resume.docx.pdf").then((response) => {
+    fetch("Ryan_Brisch_Resume.docx(3).pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
