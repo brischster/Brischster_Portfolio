@@ -5,16 +5,19 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import selfie from "../Assets/Images/selfie.jpg";
+import { NavLink } from "react-router-dom";
 
-const settings = ["About Me", "Work", "Resume", "Contact Me"];
+const settings = [
+  <NavLink to="/about">About Me</NavLink>,
+  <NavLink to="/projectList">Recent Projects</NavLink>,
+  <NavLink to="/resume">Download My Resume</NavLink>,
+];
+// const aboutMe = <NavLink to="/about">Learn A Little About Me</NavLink>;
 
 const styles = {
   header: {
@@ -58,13 +61,22 @@ const NavBar = () => {
       <AppBar position="static" style={styles.header}>
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
-            <h1>
-              Ryan{" "}
-              <span id="bit-logo">
-                <span>₿</span>
-              </span>
-              risch
-            </h1>
+            <NavLink
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "var(--bitorange)",
+                fontWeight: "bold",
+              }}
+            >
+              <h1>
+                Ryan{" "}
+                <span id="bit-logo">
+                  <span>₿</span>
+                </span>
+                risch
+              </h1>
+            </NavLink>
             <Typography
               variant="h6"
               noWrap

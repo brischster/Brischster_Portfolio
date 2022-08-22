@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { CardActionArea } from "@mui/material";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import blackjack from "../Assets/Images/blackjack.png";
 import meltedcone from "../Assets/Images/meltedcone.png";
@@ -22,9 +22,7 @@ const styles = {
     backgroundColor: "var(--bitgrey)",
     paddingLeft: "30px",
     paddingRight: "10px",
-    // display: "flex",
-    // justifyContent: "space-between",
-    //   alignItems: "center",
+
     borderBottom: "2px solid var(--bitorange)",
   },
 

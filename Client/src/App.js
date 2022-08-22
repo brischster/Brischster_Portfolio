@@ -6,11 +6,9 @@ import {
   responsiveFontSizes,
 } from "@mui/material/styles";
 import "./App.css";
-import { Typography } from "@mui/material";
 import NavBar from "./routes/NavBar";
 import Footer from "./routes/Footer";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import ProjectList from "./components/ProjectList";
 

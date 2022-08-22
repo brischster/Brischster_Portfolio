@@ -1,5 +1,4 @@
 import * as React from "react";
-import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
 import { Typography } from "@mui/material";
@@ -35,10 +34,10 @@ export default function About() {
           My name is Ryan Brisch. I am a recent graduate of Denver University's
           Full Stack Coding bootcamp. I am excited to continue this educational
           journey and keeping learning as much as I possibly can. I believe my
-          previous sales experience in real estate and passion and knowledge in
-          regenerative agriculture was developed during my time at Patagonia
-          will allow me to provide unique perspectives and solutions to my
-          future work. I am a lifelong learner, take pleasure is solving
+          previous sales experience in real estate and passion and knowledge for
+          regenerative agriculture which was developed during my time at
+          Patagonia will allow me to provide unique perspectives and solutions
+          to my future work. I am a lifelong learner, take pleasure is solving
           problems and passionate about using software to help elevate the
           quality of people's lives.
           <br />
