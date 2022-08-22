@@ -27,7 +27,7 @@ function App() {
         <NavBar />
         <ThemeProvider theme={theme}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="projectList" element={<ProjectList />} />
             <Route path="/resume" element={<Resume />} />

@@ -62,7 +62,7 @@ const NavBar = () => {
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
             <NavLink
-              to="/"
+              to="/home"
               style={{
                 textDecoration: "none",
                 color: "var(--bitorange)",
