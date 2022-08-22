@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import "typeface-bellefair";
+// import "typeface-bellefair";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

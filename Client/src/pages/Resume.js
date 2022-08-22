@@ -1,3 +1,5 @@
+import { Typography } from "@mui/material";
+
 const App = () => {
   // Function will execute on click of button
   const onButtonClick = () => {
@@ -17,8 +19,12 @@ const App = () => {
   return (
     <>
       <center>
-        <h1>Thank You for Your Interest</h1>
-        <h3>Click on below button to download PDF version of my resume</h3>
+        <h1 style={{ fontWeight: "normal", fontFamily: "BelleFair" }}>
+          Thank You for Your Interest
+        </h1>
+        <h3 style={{ fontWeight: "normal", fontFamily: "BelleFair" }}>
+          Click on below button to download a PDF version of my resume
+        </h3>
         <p>
           Please use any of the options in the footer to reach out about any
           questions or interest in discussing how I can be a benefit to your

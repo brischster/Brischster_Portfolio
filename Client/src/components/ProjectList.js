@@ -53,16 +53,15 @@ const ProjectList = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Link href="espn.com" underline="hover">
-                <Button
-                  style={styles.button}
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://caseysmiller.github.io/bootcapBlackjack/"
-                >
-                  {"Play a Hand of Cards"}
-                </Button>
-              </Link>
+              <Button
+                style={styles.button}
+                target="_blank"
+                rel="noreferrer"
+                href="https://caseysmiller.github.io/bootcapBlackjack/"
+              >
+                {"Play a Hand of Cards"}
+              </Button>
+
               <Button
                 style={styles.button}
                 target="_blank"

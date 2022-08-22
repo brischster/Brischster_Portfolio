@@ -92,7 +92,15 @@ const NavBar = () => {
                 textDecoration: "none",
               }}
             ></Typography>
-            <h1 style={styles.title}>Heal the World with Orange Pills</h1>
+            <h1
+              style={{
+                color: "var(--bitorange)",
+                fontFamily: "Bellefair",
+                fontWeight: "normal",
+              }}
+            >
+              Heal the World with Orange Pills
+            </h1>
             <Box>
               <Tooltip title="Click for Options" anchor="top-end">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
