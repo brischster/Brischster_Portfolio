@@ -25,7 +25,7 @@ const App = () => {
         <h3 style={{ fontWeight: "normal", fontFamily: "BelleFair" }}>
           Click on below button to download a PDF version of my resume
         </h3>
-        <p>
+        <p style={{ fontWeight: "normal", fontFamily: "BelleFair" }}>
           Please use any of the options in the footer to reach out about any
           questions or interest in discussing how I can be a benefit to your
           company.
